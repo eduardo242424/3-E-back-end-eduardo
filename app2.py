@@ -34,5 +34,9 @@ def jogo_da_forca():
             print(f"Tentativas restantes: {tentativas}")
             print(f"Letras erradas: {', '.join(letras_erradas)}")
 
+    if '_' not in letras_corretas:
+        print("Parabéns! Voce ganhou!")
+    else:
+        print(f"voce perdeu! a palavra era {palavra}.")
 
-         
+    jogo_da_forca()   
